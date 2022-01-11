@@ -118,7 +118,10 @@ inline void DLinkedList<T>::remove(const T& value)
 			if (tmp->value == value)
 			{
 				tmp->prev->next = tmp->next;
-				tmp->next->prev = tmp->prev;
+
+				if (tmp->next != nullptr)
+					tmp->next->prev = tmp->prev;
+
 				delete tmp;
 				this->size--;
 				break;

@@ -16,18 +16,9 @@ int main()
 
 	list.printList();
 	std::cout << list.getSize() << "\n";
-	std::cout << list.isEmpty() << "\n";
-	std::cout << list.isContain(180) << "\n";
 
-	for (size_t i = 0; i < list.getSize(); i++)
-	{
-		std::cout << list[i]->value << "\t";
-	}
-	std::cout << "\n";
-
-	list.remove(15);
-	list.remove(16);
-	list.remove(17);
+	list.remove(19);
+	list.remove(10);
 	list.printList();
 	std::cout << list.getSize() << "\n";
 }
